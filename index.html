@@ -52,6 +52,7 @@
             position: relative;
             animation: slideIn 5s infinite;
         }
+    
 
         @keyframes slideIn {
             0% {
@@ -91,8 +92,8 @@
         }
 
         .carousel-item img {
-            width: 100%;
-            height: auto;
+            width: 700px;
+            height: 500px;
             object-fit: cover;
             margin: auto;
         }
@@ -154,7 +155,7 @@
                     <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
                     <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                    <li class="nav-item"><a class="nav-link" href="milan_cv.docx" download>Download CV</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/static/milan_cv.docx" download>Download CV</a></li>
                 </ul>
             </div>
         </div>
@@ -163,7 +164,7 @@
     <div class="hero">
         <div class="container text-center">
             <h1>Welcome to My Portfolio</h1>
-            <img src="image.png" alt="Profile Picture" class="profile-img img-fluid">
+            <img src="/static/images/image.png" alt="Profile Picture" class="profile-img img-fluid">
         </div>
     </div>
 
@@ -182,27 +183,28 @@
         <div id="projectCarousel" class="carousel slide mt-4" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="Au.png" alt="Robotic Arm Automation" class="img-fluid">
+                    <img src="/static/images/Au.png" alt="Robotic Arm Automation" class="img-fluid">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Robotic Arm Automation</h5>
                         <p>Home automation project with robotic control.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="my.png" alt="Portfolio Website" class="img-fluid">
+                    <img src="/static/images/my.png" alt="Portfolio Website" class="img-fluid">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Portfolio Website</h5>
                         <p>Fully responsive website using Flask and Bootstrap.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="o2.png" alt="Oxygen Detector Project" class="img-fluid">
+                    <img src="/static/images/o2.png" alt="Oxygen Detector Project" class="img-fluid">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Oxygen Level Detection</h5>
                         <p>Project using Arduino and Wi-Fi module to monitor oxygen levels.</p>
                     </div>
                 </div>
             </div>
+    
             <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
@@ -213,12 +215,13 @@
             </button>
         </div>
     </div>
-
+    
     <div id="contact" class="footer">
         <div class="container">
             <p>Connect with me:</p>
+            <p>+91-6296740204</p>
             <p>Email: milansahoo7211662005@gmail.com</p>
-            <a href="mailto:milansahoo7211662005@gmail.com">Email Me</a>
+            <a href="mailto:milansahoo23@gmail.com">Email Me</a>
             <div class="copyright mt-3">© 2024 Milan Sahoo</div>
             <a href="https://www.linkedin.com/in/milan-sahoo-98a912312" target="_blank">LinkedIn</a> |
             <a href="https://github.com/Milan721166" target="_blank">GitHub</a> |
@@ -249,17 +252,17 @@
     </div>
     
     <script>
-        // Handle form submission
+        
         document.getElementById("contactForm").addEventListener("submit", function(event) {
-            event.preventDefault(); // Prevent the default form submission behavior
+            event.preventDefault(); 
     
-            // You can optionally process form data here, e.g., log it to the console
+            
             const name = document.getElementById("name").value;
             const email = document.getElementById("email").value;
             const message = document.getElementById("message").value;
             console.log("Form submitted:", { name, email, message });
     
-            // Redirect to the Thank You page
+            
             window.location.href = "thank_you.html";
         });
     </script>
